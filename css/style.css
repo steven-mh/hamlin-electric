@@ -609,6 +609,11 @@ ul.top-info li p.info-text {
 	color: #333;
 }
 
+.top-phone {
+	font-weight: 600;
+	color: #044491;
+}
+
 /* Top bar border */
 .top-bar-border {
 	padding: 8px 20px 8px;
