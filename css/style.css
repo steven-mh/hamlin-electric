@@ -1355,35 +1355,26 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 	text-transform: uppercase;
 }
 
-/* Facts
+/* Services
 ================================================== */
-.facts-wrapper {
+
+.home-services {
+	display: block;
 	text-align: center;
 }
 
-.facts-wrapper .ts-facts {
-	color: #fff;
-}
-
-.ts-facts .ts-facts-icon i {
-	font-size: 42px;
-	color: #044491;
-}
-
-.ts-facts .ts-facts-content .ts-facts-num {
-	color: #fff;
-	font-size: 44px;
-	margin: 30px 0 20px;
-}
-
-.ts-facts .ts-facts-content .ts-facts-title {
+.home-services h3 {
 	font-size: 16px;
+}
+.home-services:hover h3 {
 	color: #044491;
-	margin: 0;
+	transition: 400ms;
 }
 
-/* Services
-================================================== */
+.home-services img {
+	border: 1px solid #0d0d0d;
+}
+
 /* Service box */
 .ts-service-box .ts-service-icon i {
 	font-size: 36px;
