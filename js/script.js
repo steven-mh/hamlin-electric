@@ -136,16 +136,15 @@ jQuery(function ($) {
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
 
+		const data = $("#contact-form").serialize();
+
 		$.ajax({
 			method: "POST",
 			url: "https://formsubmit.co/ajax/1fecbb73600da2d87b371562a8fde953",
 			dataType: "json",
 			accepts: "application/json",
-			data: {
-				name: "FormSubmit",
-				message: "I'm from Devro LABS",
-			},
-			success: (data) => console.log(data),
+			data: formData,
+			success: (data) => alert("Success!"),
 			error: (err) => console.log(err),
 		});
 	});
