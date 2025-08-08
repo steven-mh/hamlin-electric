@@ -148,9 +148,14 @@ jQuery(function ($) {
 				$("#result").css("color", "#00FF2F");
 				$("#result").css("display", "block");
 				$("#result").text("Success! Your message has been sent!");
-				console.log(data);
 			},
-			error: (err) => console.log(err),
+			error: (err) => {
+				$("#result").css("color", "#ff0000");
+				$("#result").css("display", "block");
+				$("#result").text(
+					"Error! Something went wrong. Try sending us a message directly at austin@hamlinelectric.com"
+				);
+			},
 		});
 	});
 });
