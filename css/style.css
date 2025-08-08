@@ -2080,6 +2080,10 @@ label {
 	font-weight: 400;
 }
 
+#result {
+	text-align: center;
+}
+
 /* Contact page 2 */
 .ts-service-box.text-center .ts-service-icon.icon-squre i {
 	float: none;

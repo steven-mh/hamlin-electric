@@ -136,7 +136,8 @@ jQuery(function ($) {
 	$("#contact-form").submit(function (e) {
 		e.preventDefault();
 
-		const data = $("#contact-form").serialize();
+		const formData = $("#contact-form").serialize();
+		const resultDisplay = document.querySelector("#result");
 
 		$.ajax({
 			method: "POST",
@@ -144,7 +145,11 @@ jQuery(function ($) {
 			dataType: "json",
 			accepts: "application/json",
 			data: formData,
-			success: (data) => alert("Success!"),
+			success: (data) => {
+				document.resultDisplay.style.color = "#00FF2F";
+				document.resultDisplay.style.display = "block";
+				document.resultDisplay.style.innerText = "Success! Your message has been sent!";
+			},
 			error: (err) => console.log(err),
 		});
 	});
