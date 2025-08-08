@@ -137,7 +137,6 @@ jQuery(function ($) {
 		e.preventDefault();
 
 		const formData = $("#contact-form").serialize();
-		const resultDisplay = document.querySelector("#result");
 
 		$.ajax({
 			method: "POST",
@@ -146,9 +145,9 @@ jQuery(function ($) {
 			accepts: "application/json",
 			data: formData,
 			success: (data) => {
-				document.resultDisplay.style.color = "#00FF2F";
-				document.resultDisplay.style.display = "block";
-				document.resultDisplay.style.innerText = "Success! Your message has been sent!";
+				$("#result").css("color", "#00FF2F");
+				$("#result").css("display", "block");
+				$("#result").text("Success! Your message has been sent!");
 			},
 			error: (err) => console.log(err),
 		});
