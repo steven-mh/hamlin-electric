@@ -148,6 +148,7 @@ jQuery(function ($) {
 				$("#result").css("color", "#00FF2F");
 				$("#result").css("display", "block");
 				$("#result").text("Success! Your message has been sent!");
+				console.log(data);
 			},
 			error: (err) => console.log(err),
 		});
